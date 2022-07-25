@@ -22,7 +22,7 @@ const Select = () => {
     }, [selected, botSelected])
     const startGame = (type: string) => {
         setSelected(type)
-        let random = Math.floor(Math.random() * 2)
+        let random = Math.floor(Math.random() * 3)
         if(random === 0)
             setbotSelected('paper')
         else if(random === 1)
